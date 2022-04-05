@@ -1,0 +1,39 @@
+name: techuni_app
+description: A new Flutter project.
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: ">=2.16.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.2
+  cloud_firestore:
+  firebase_analytics:
+  firebase_auth:
+  firebase_storage:
+  firebase_core:
+  hooks_riverpod: 
+  flutter_hooks: 
+  flutter_state_notifier: 
+  image_picker:
+  url_launcher: ^6.0.20
+
+# The following section is specific to Flutter.
+flutter:
+
+  uses-material-design: true
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner:
+  freezed:
+  json_serializable: ^6.1.4
+  pedantic_mono:
+  flutter_launcher_icons:
+  analyzer: '>=3.0.0 <3.4.0'
