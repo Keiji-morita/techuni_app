@@ -61,10 +61,10 @@ class _profile_pageState extends State<profile_page> {
   //アイコン画像
   Widget buildProfileImage() => CircleAvatar(
     radius: profileHeight / 2,
-    backgroundColor: Colors.grey.shade800,
-    // backgroundImage: NetworkImage(
-    //   'https://www.google.com/url?sa=i&url=https%3A%2F%2Fdailyportalz.jp%2Fkiji%2F140910165126&psig=AOvVaw35XrgXuIylxbwPSMEa4mrG&ust=1649252422423000&source=images&cd=vfe&ved=0CAoQjRxqFwoTCLDwz5iG_fYCFQAAAAAdAAAAABAa',
-    // )
+    backgroundColor: Colors.white,
+    backgroundImage: NetworkImage(
+      'https://cdn.icon-icons.com/icons2/1378/PNG/512/avatardefault_92824.png',
+    )
   );
 }
 
@@ -93,7 +93,7 @@ Widget buildContent() => Container(
         ]
       ),
       Text(
-        '関西学院大学　医学部',
+        '国際信州学院大学　法学部',
         style: TextStyle(fontSize: 20)
       ),
       Text(
