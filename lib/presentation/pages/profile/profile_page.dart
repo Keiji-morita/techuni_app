@@ -70,7 +70,7 @@ class _profile_pageState extends State<profile_page> {
 
 Widget buildContent() => Container(
   child: Column(
-    mainAxisSize: MainAxisSize.min,
+    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
     children: [
       Text(
         'テック　ユニ太',
@@ -80,7 +80,15 @@ Widget buildContent() => Container(
       Row(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(FontAwesomeIcons.github),
+          buildSocialIcon(FontAwesomeIcons.slack),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.github),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.twitter),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.instagram),
+          const SizedBox(width: 12),
+          buildSocialIcon(FontAwesomeIcons.discord),
           const SizedBox(width: 12),
         ]
       ),
@@ -104,8 +112,16 @@ Widget buildContent() => Container(
   )
 );
 
-//   Widget buildSocialIcon(IconData icon) => CircleAvatar(
-//   radius: 25,
-//   child: Center(child: Icon(icon, size: 32)),
-// );
+  Widget buildSocialIcon(IconData icon) => CircleAvatar(
+  radius: 25,
+  child: Material(
+    shape: CircleBorder(),
+    clipBehavior: Clip.hardEdge,
+    color: Colors.transparent,
+      child: InkWell(
+        onTap: () {},
+          child: Center(child: Icon(icon, size: 32)),
+      )
+  ),
+);
 
